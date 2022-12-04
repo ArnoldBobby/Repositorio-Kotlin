@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="GUI.fragment1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#E47B59"
+        android:fontFamily="@font/open_sans_light"
+        android:text="¡Bienvenido, usuario!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="#F6E0E0"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Ingresa los datos para agregar o buscar un usuario"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="#FFFFFF"
+                android:backgroundTint="#F3E6E6"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Cédula"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/txt_Cedula"
+                android:layout_width="288dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:ems="10"
+                android:fontFamily="@font/open_sans_light"
+                android:hint="Ingrese su cédula"
+                android:inputType="textLongMessage|textPersonName"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="163dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="#FFFFFF"
+                android:backgroundTint="#F3E6E6"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Nombres y Apellidos"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/txt_Nombre"
+                android:layout_width="288dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:ems="10"
+                android:fontFamily="@font/open_sans_light"
+                android:hint="Ingrese su nombre y apellido"
+                android:inputType="textLongMessage|textMultiLine|textPersonName"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="#FFFFFF"
+                android:backgroundTint="#F3E6E6"
+                android:elegantTextHeight="true"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Tipo"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <Spinner
+                android:id="@+id/box_Tipo"
+                android:layout_width="232dp"
+                android:layout_height="50dp"
+                android:layout_weight="50" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btm_Agregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EC9377"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Agregar"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btm_Buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EC9377"
+        android:fontFamily="@font/open_sans_light"
+        android:text="Buscar"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btm_Eliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/open_sans_light"
+        android:text="eliminar"
+        android:textColor="#000000" />
+
+    <TableLayout
+        android:id="@+id/tablaUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0" />
+
+</LinearLayout>

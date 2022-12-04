@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6CBADD"
+        android:editable="false"
+        android:fontFamily="sans-serif-black"
+        android:soundEffectsEnabled="false"
+        android:text="Bienvenido a la Aplicación Línea"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#C9DCEC"
+        android:backgroundTint="#AAC8DF"
+        android:editable="false"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foregroundTint="@color/white"
+        android:hint="Aquí aparecerá en qué cuadrante se encuentra la línea"
+        android:shadowColor="@color/white"
+        android:textAlignment="inherit"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/x1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ingrese la coordenada x1"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textStyle="bold|italic"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/y1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ingrese la coordenada y1"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/x2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ingrese la coordenada x2"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/y2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:ems="10"
+        android:hint="Ingrese la coordenada y2"
+        android:inputType="numberSigned|number|numberDecimal"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:text="calcular" />
+
+</LinearLayout>
